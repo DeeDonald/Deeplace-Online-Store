@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Odoemene Donald">
+        <meta name="description" content="Chee's Oven">
+        <title>Order</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="icon-cart.svg" type="image/icon-x">
+    </head>
+    <body>
+        <div>
+            <fieldset class="form">
+                <form action="https://httpbin.org" method="get" class="for">
+                    <h2>Order</h2>
+                    <label for="name" class="label">Name:</label><br>
+                    <input type="text" name="Name" id="name" autocomplete="yes" autocapitalize="yes" required placeholder="Last Name first" class="input"><br>    
+                    <label for="email" class="label">Email:</label><br>
+                    <input type="email" name="Email" id="email" autocomplete="yes"  required placeholder="example@mail.com" class="input"><br>
+                    <label for="address" class="label">Address:</label><br>
+                    <input type="address" name="Address" id="address" autocomplete="yes"  required placeholder="your address" class="input"><br>
+                    <label for="contact" class="label">Tel. No.:</label><br>
+                    <input type="tel" name="Tel. No" id="contact" autocomplete="yes"  required placeholder="Telephone Number" class="input"><br>
+                    <label for="order" class="label">Your Order:</label><br>
+                    <select name="Order" id="order" class="inputt">
+                        <option value="Cannoli">Cannoli</option>
+                        <option value="Pretzels">Pretzels</option>
+                        <option value="Eclairs">Eclairs</option>
+                        <option value="Pies">Pies</option>
+                        <option value="Vanilla Scones">Vanilla Scones</option>
+                        <option value="Strawberry Pastry">Strawberry Pastry</option>
+                        <option value="Cream Puffs">Cream Puffs</option>
+                        <option value="Profiteroles">Profiteroles</option>
+                        <option value="Coconut Bread">Coconut Bread</option>
+                        <option value="Banana Bread">Banana Bread</option>
+                        <option value="Bagels">Bagels</option>
+                        <option value="Parfait">Parfait</option>
+                        <option value="Chocolate Chip">Chocolate Chip</option>
+                        <option value="Bento Cake">Bento Cake</option>
+                        <option value="Small Chops">Small Chops</option>
+                        <option value="Others">Others</option>
+                        <option value="" selected>Your Choice</option>
+                    </select><br>
+                    <label for="Order" class="label">Describe your preferred order:</label><br>
+                    <textarea name="Order Description" id="Order" cols="30" rows="10" class="input" placeholder="Your text here"></textarea><br>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                <div class="end">
+                    <p>Thanks for your patronage</p>
+                    Click <a href="/">HERE</a> to return to Home Page
+                </div>
+            </fieldset>
+        </div>
+    </body>
+</html>

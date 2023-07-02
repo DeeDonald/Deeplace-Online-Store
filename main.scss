@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+.left{
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover{
+        font-weight: bolder;
+    }
+}
+.blue{
+    color: blue;
+}
+.hero{
+    padding-top: 8em;
+    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(mainback.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    text-align: center;
+    .head{
+        font-size: 1.2em;
+        margin-bottom: 1.2em;
+        margin-top: 4em;
+
+    }
+    .pastries{
+        font-size: 1.6em;
+        color: orange;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 1.2em;
+        margin-bottom: 1.4em;
+    }
+    
+    .discover{
+        background: white;
+        padding: 0.6em 2em;
+        border-radius: 10%;
+        a{
+            text-decoration: none;
+            color: orange;
+        }
+        a:hover{
+            font-weight: bolder;
+        }
+    }
+    .order{
+        border: orange solid;
+        background: transparent;
+        padding: 0.6em 2em ;
+        border-radius: 10%;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            font-weight: bolder;
+        }
+    }
+
+}
+.middle{
+    margin-top: 1.4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 4em;
+    h2{
+        margin: 1.2em;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    .dots{
+        color: orange;
+        font-size: 4em;
+    }
+}
+.menu{
+    background-image: url(secondback.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2em;
+    padding-bottom: 6em;
+}
+.mtop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 1.6em;
+    margin-bottom: 2em;
+    color: white;
+    h2{
+        margin: .6em;
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.6em;
+        font-family: cursive;
+    }
+}
+.lists{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+    
+    ul{
+        list-style-type: none;
+        margin-bottom: 2em;
+        li{
+            margin: .4em;
+            font-size: 1.6em;
+        }
+        .heading{
+            margin-bottom: .8em;
+            font-family: cursive;
+        }
+    }
+}
+.view{
+    margin-left: 43%;
+    margin-top: 1.6em;
+    color: white;
+    font-size: 1.2em;
+    a{
+        text-decoration: none;
+        color: orange;
+        font-weight: bold;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-size: 1.2em;
+    }
+}
+.lightgray{
+    background: lightgray;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.2em;
+    padding: 2em;
+    h2{
+        margin-bottom: 1.4em;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 1.4em;
+        font-family: cursive;
+        color: orange;
+    }
+}
+.standard{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 3em;
+    background: black;
+    color: white;
+    outline: white 2em;
+    outline-offset: inherit;
+    h2{
+        margin-bottom: 1.5em;
+        font-family: cursive;
+    }
+    p{
+        margin: 1.4em;
+        font-size: 1.2em;
+        
+    }
+    .order{
+        a{
+            text-decoration: none;
+            background: white;
+            color: black;
+            padding: 0.6em;
+            border-radius: 10%;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    }
+}
+
+.delight{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 3em;
+    background: white;
+    color: black;
+    border: solid;
+    outline: white 2em;
+    outline-offset: inherit;
+    .orange{
+        color: orange;
+    }
+    h2{
+        margin-bottom: 1.5em;
+        font-family: cursive;
+    }
+    p{
+        margin: 1.4em;
+        font-size: 1.2em;
+        
+    }
+    .orderdelight{
+        a{
+            text-decoration: none;
+            background: black;
+            color: white;
+            padding: 0.6em;
+            border-radius: 10%;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    }
+}
+.deluxe{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 3em;
+    background: black;
+    color: white;
+    outline: white 2em;
+    outline-offset: inherit;
+    h2{
+        margin-bottom: 1.5em;
+        font-family: cursive;
+    }
+    p{
+        margin: 1.4em;
+        font-size: 1.2em;
+        
+    }
+    .orderdeluxe{
+        a{
+            text-decoration: none;
+            background: white;
+            color: black;
+            padding: 0.6em;
+            border-radius: 10%;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    }
+}
+.hoth{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 3em;
+    background: white;
+    color: black;
+    border: solid;
+    outline: white 2em;
+    outline-offset: inherit;
+    .orange{
+        color: orange;
+    }
+    h2{
+        margin-bottom: 1.5em;
+        font-family: cursive;
+    }
+    p{
+        margin: 1.4em;
+        font-size: 1.2em;
+        
+    }
+    .orderhot{
+        a{
+            text-decoration: none;
+            background: black;
+            color: white;
+            padding: 0.6em;
+            border-radius: 10%;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    }
+}
+.review{
+    background: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    h2{
+        margin-bottom: 1.2em;
+    }
+    .rev1{
+        margin-bottom: 1.8em;
+    }
+    .vera{
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;
+        margin-bottom: 1.2em;
+    }
+    .donald{
+        height: 200px;
+        width: 180px;
+        border-radius: 50%;
+        margin-bottom: 1.2em;
+    }
+
+}
+.blacktop{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    margin: 2em;
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+    ul{
+        list-style-type: none;
+        .space{
+            margin-bottom: 1.4em;
+            font-weight: bolder;
+        }
+    }
+}
+.blackbottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font-size: 1.2em;
+        margin-bottom: .6em;
+    }
+    .do{
+        font-size: 4em;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+}
+.toppp{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4em;
+    h1{
+        margin-bottom: .6em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
+.catdelight{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  background: lightgray;
+  background-image: url(chocolatedrip.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 1.2em;
+  h3{
+      margin-bottom: 1.2em;
+  }
+  a{
+      color: black;
+      background: transparent;
+      border: solid orange;
+      text-decoration: none;
+      padding: .6em;
+  }
+  a:hover{
+      text-decoration: underline;
+      font-weight: bolder;
+  }
+}
+.del-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 6em;
+    margin-right: 6em;
+    text-align: justify;
+    ul{
+        list-style-type: none;
+        margin-bottom: 1.2em;
+        li{
+            margin-bottom: .6em;
+        }
+    }
+}
+.catdeluxe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background-image: url(desktop-wallpaper-stack-of-chocolate-cookies-food-thumbnail.jpg);
+    background-color: rgba(255, 255, 255, 0.678);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    h3{
+        margin-bottom: 1.2em;
+        color: white;
+    }
+    a{
+        color: white;
+        background: transparent;
+        border: solid orange;
+        text-decoration: none;
+        padding: .6em;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+    li{
+        color: white;
+    }
+}
+.catothers{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background: lightgray;
+    background-image: url(chocolatedrip.png);
+    background-repeat: no-repeat;
+    h3{
+        margin-bottom: 1.2em;
+    }
+    a{
+        color: black;
+        background: transparent;
+        border: solid orange;
+        text-decoration: none;
+        padding: .6em;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+}
+.click{
+    margin-left: 36%;
+    padding: 2em;
+    font-size: 1.4em;
+    a{
+        color: orange;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+}
+.form{margin-left: 25em; 
+    margin-right: 20em; 
+    padding-left: 4em;
+    padding-top: 1em;
+    padding-right: 8em;
+    padding-bottom: 0em;
+    background: black;
+    margin-top: 2em;
+    h2{
+        text-align: center;
+        color: white;
+    }
+    .label{
+        margin-bottom: 2em;
+        color: white;
+    }
+    .input{
+        margin-bottom: 2em;
+        background: black;
+        width: 100%;
+        border:  strong white;
+        color: white;
+    }
+    .input::placeholder{
+        color: white;
+    }
+    .submit{
+        color: white;
+        background: orange;
+        padding: .6em 10em;
+        margin-left: 25%;
+        cursor: pointer;
+        font-weight: normal;
+        transition: font-weight 0.3s ease;
+    }
+    .submit:hover{
+        font-weight: bolder;
+    }
+    .end{
+        color: white;
+    }
+    .inputt{
+        margin-bottom: 2em;
+        background: black;
+        width: 100%;
+        border:  strong white;
+        color: white;
+    }
+    .end{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1em;
+        p{
+            margin: 1em;
+        }
+        a{
+            color: orange;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    }
+}
